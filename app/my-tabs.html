@@ -1,0 +1,10 @@
+<div >
+<ul class="nav nav-tabs">
+    <li ng-repeat="pane in panes" ng-class="{active:pane.selected}">
+
+   <a href="" ng-click="select(pane)">{{pane.title}}</a>
+   </li>
+</ul>
+    <!--moeten aangepast worden , zodat er de content van de mail hier worden opgehaald -->
+    <div class="tab-content" ng-transclude></div>
+</div>
